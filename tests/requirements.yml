@@ -1,0 +1,4 @@
+---
+
+- src: https://github.com/MerlinDMC/ansible-role-homebrew.git
+  name: MerlinDMC.superlumic-homebrew
