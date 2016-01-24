@@ -1,6 +1,7 @@
 ---
 
-install_options: "--with-cocoa"
+install_options:
+  - with-cocoa
 
 spacemacs_repository: "https://github.com/syl20bnr/spacemacs.git"
 

@@ -1,7 +1,10 @@
 ---
 
 - name: Install Emacs
-  homebrew: name=emacs install_options="{{ install_options }}" state=present
+  homebrew: name=emacs install_options="{{ install_options|join(',') }}" state=present
+
+- name: Link Emacs application
+  homebrew: name=emacs state=linked
 
 - name: Clone Spacemacs repository
   git: repo="{{ spacemacs_repository }}" dest="{{ ansible_user_dir }}/.emacs.d" depth=1
