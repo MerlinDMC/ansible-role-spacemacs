@@ -7,7 +7,7 @@
   homebrew: name=emacs state=linked
 
 - name: Clone Spacemacs repository
-  git: repo="{{ spacemacs_repository }}" dest="{{ ansible_user_dir }}/.emacs.d" depth=1
+  git: repo="{{ spacemacs_repository }}" version="{{ spacemacs_branch }}" dest="{{ ansible_user_dir }}/.emacs.d" depth=1
 
 - name: Render .spacemacs template
   template: src="{{ dot_spacemacs_template_path }}" dest="{{ ansible_user_dir }}/.spacemacs"

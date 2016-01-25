@@ -4,5 +4,6 @@ install_options:
   - with-cocoa
 
 spacemacs_repository: "https://github.com/syl20bnr/spacemacs.git"
+spacemacs_branch: master
 
 dot_spacemacs_template_path: "{{ ansible_user_dir }}/.emacs.d/core/templates/.spacemacs.template"
